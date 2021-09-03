@@ -72,6 +72,7 @@ class MainActivity : AppCompatActivity() {
                 }
             }
             startButton.isEnabled = value != AppState.UNREADY
+            selectFileButton.isEnabled = value == AppState.READY
             progressEditTextNumber.isEnabled = value == AppState.READY
             skipRateEditTextNumber.isEnabled = value == AppState.READY
             field = value
